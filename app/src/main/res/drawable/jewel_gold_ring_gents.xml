@@ -1,0 +1,68 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:pathData="M100,100 m-95,0 a95,95 0 1,0 190,0 a95,95 0 1,0 -190,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="95"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#FFFBF2"/>
+                <item android:offset="0.7" android:color="#F7EED9"/>
+                <item android:offset="1.0" android:color="#EEDEB8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Thick Solid Gents Ring Band -->
+    <path
+        android:strokeWidth="22"
+        android:pathData="M100,118 m-45,0 a45,45 0 1,0 90,0 a45,45 0 1,0 -90,0">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="40"
+                android:startY="70"
+                android:endX="160"
+                android:endY="170"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#8A682C"/>
+                <item android:offset="0.4" android:color="#D4AF37"/>
+                <item android:offset="0.8" android:color="#F3E5AB"/>
+                <item android:offset="1.0" android:color="#8A682C"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Flat Signet Top Plate -->
+    <path
+        android:pathData="M65,56 L135,56 L125,82 L75,82 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="65"
+                android:startY="56"
+                android:endX="135"
+                android:endY="82"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#D4AF37"/>
+                <item android:offset="0.5" android:color="#FFF9EE"/>
+                <item android:offset="1.0" android:color="#8A682C"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Rhodium Textured Center Inset -->
+    <path
+        android:pathData="M78,62 L122,62 L116,76 L84,76 Z"
+        android:fillColor="#E2E6EA"/>
+
+    <!-- Princess Cut Center Accent Diamond -->
+    <path
+        android:pathData="M95,65 L105,65 L105,73 L95,73 Z"
+        android:fillColor="#FFFFFF"/>
+</vector>

@@ -1,0 +1,51 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:pathData="M100,100 m-95,0 a95,95 0 1,0 190,0 a95,95 0 1,0 -190,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="95"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#F8FAFC"/>
+                <item android:offset="0.7" android:color="#ECEFF2"/>
+                <item android:offset="1.0" android:color="#DEE3E8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Outer Silver Coin Rim -->
+    <path
+        android:strokeWidth="4"
+        android:pathData="M100,100 m-56,0 a56,56 0 1,0 112,0 a56,56 0 1,0 -112,0"
+        android:strokeColor="#717D8A"/>
+
+    <!-- Coin Disc -->
+    <path
+        android:pathData="M100,100 m-52,0 a52,52 0 1,0 104,0 a52,52 0 1,0 -104,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="48"
+                android:startY="48"
+                android:endX="152"
+                android:endY="152"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFFFF"/>
+                <item android:offset="0.4" android:color="#CFD6DC"/>
+                <item android:offset="0.8" android:color="#A0AAB3"/>
+                <item android:offset="1.0" android:color="#717D8A"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 999 Purity Stamp & Sacred Om / Laxmi Motif -->
+    <path android:pathData="M100,75 m-10,0 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0" android:fillColor="#5D646B"/>
+    <path android:pathData="M85,115 L115,115 L115,120 L85,120 Z" android:fillColor="#5D646B"/>
+    <path android:pathData="M88,128 L112,128 L112,132 L88,132 Z" android:fillColor="#5D646B"/>
+</vector>

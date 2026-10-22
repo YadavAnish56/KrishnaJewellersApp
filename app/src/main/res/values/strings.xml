@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Krishna Jewellers</string>
+    <string name="store_name">Krishna Jewellers</string>
+    <string name="store_tagline">Where Every Jewel Tells a Story</string>
+    <string name="store_city">Surat, Gujarat</string>
+    <string name="store_full_address">16, Shopping Center, Umiya Nagar, Godadara Road, Surat, Gujarat, India</string>
+    <string name="store_phone_placeholder">+91 98765 43210</string>
+    <string name="store_whatsapp_placeholder">+91 98765 43210</string>
+    <string name="store_hours">10:00 AM – 8:30 PM (Mon – Sun)</string>
+</resources>

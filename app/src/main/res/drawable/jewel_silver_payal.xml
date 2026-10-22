@@ -1,0 +1,62 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:pathData="M100,100 m-95,0 a95,95 0 1,0 190,0 a95,95 0 1,0 -190,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="95"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#F8FAFC"/>
+                <item android:offset="0.7" android:color="#ECEFF2"/>
+                <item android:offset="1.0" android:color="#DEE3E8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Silver Anklet Chain Curve -->
+    <path
+        android:strokeWidth="9"
+        android:pathData="M35,80 Q100,145 165,80">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="35"
+                android:startY="80"
+                android:endX="165"
+                android:endY="145"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#717D8A"/>
+                <item android:offset="0.4" android:color="#FFFFFF"/>
+                <item android:offset="0.7" android:color="#B0B9C2"/>
+                <item android:offset="1.0" android:color="#717D8A"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Filigree Lace Trim -->
+    <path
+        android:strokeWidth="3"
+        android:pathData="M45,88 Q100,140 155,88"
+        android:strokeColor="#9EA8B3"/>
+
+    <!-- Chham Chham Ghungroo Bells -->
+    <path android:pathData="M52,106 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#B0B9C2"/>
+    <path android:pathData="M70,122 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#FFFFFF"/>
+    <path android:pathData="M88,134 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#B0B9C2"/>
+    <path android:pathData="M100,138 m-4.5,0 a4.5,4.5 0 1,0 9,0 a4.5,4.5 0 1,0 -9,0" android:fillColor="#FFFFFF"/>
+    <path android:pathData="M112,134 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#B0B9C2"/>
+    <path android:pathData="M130,122 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#FFFFFF"/>
+    <path android:pathData="M148,106 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#B0B9C2"/>
+
+    <!-- S Hook Clasp -->
+    <path
+        android:pathData="M32,74 C30,70 34,66 38,70 C42,74 36,78 40,82"
+        android:strokeWidth="3.5"
+        android:strokeColor="#717D8A"/>
+</vector>

@@ -1,0 +1,73 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:pathData="M100,100 m-95,0 a95,95 0 1,0 190,0 a95,95 0 1,0 -190,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="95"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#FFFBF2"/>
+                <item android:offset="0.7" android:color="#F7EED9"/>
+                <item android:offset="1.0" android:color="#EEDEB8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Top Loop Bail -->
+    <path
+        android:strokeWidth="5"
+        android:pathData="M100,38 m-10,0 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0"
+        android:strokeColor="#8A682C"/>
+
+    <!-- Ganesha Crown (Mukut) -->
+    <path
+        android:pathData="M84,68 L100,48 L116,68 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="84"
+                android:startY="48"
+                android:endX="116"
+                android:endY="68"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#D4AF37"/>
+                <item android:offset="1.0" android:color="#8A682C"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Ganesha Head & Large Ears -->
+    <path
+        android:pathData="M65,75 Q60,95 82,100 Q100,100 100,85 Q100,100 118,100 Q140,95 135,75 Q115,70 100,74 Q85,70 65,75 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="60"
+                android:startY="70"
+                android:endX="140"
+                android:endY="100"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#8A682C"/>
+                <item android:offset="0.5" android:color="#D4AF37"/>
+                <item android:offset="1.0" android:color="#8A682C"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Ganesha Curved Trunk (Sond) with Modak -->
+    <path
+        android:strokeWidth="8"
+        android:pathData="M100,90 C100,125 118,135 125,122 C128,116 122,112 118,116"
+        android:strokeColor="#D4AF37"/>
+
+    <!-- Tilak on Forehead -->
+    <path android:pathData="M98,68 L102,68 L102,78 L98,78 Z" android:fillColor="#C41E3A"/>
+
+    <!-- Auspicious Modak -->
+    <path android:pathData="M124,116 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#FFF3D4"/>
+</vector>

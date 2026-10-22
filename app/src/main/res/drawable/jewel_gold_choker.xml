@@ -1,0 +1,52 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:pathData="M100,100 m-95,0 a95,95 0 1,0 190,0 a95,95 0 1,0 -190,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="95"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#FFFBF2"/>
+                <item android:offset="0.7" android:color="#F7EED9"/>
+                <item android:offset="1.0" android:color="#EEDEB8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Choker Collar Band -->
+    <path
+        android:strokeWidth="18"
+        android:pathData="M40,75 Q100,120 160,75">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="40"
+                android:startY="75"
+                android:endX="160"
+                android:endY="120"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#8A682C"/>
+                <item android:offset="0.5" android:color="#D4AF37"/>
+                <item android:offset="1.0" android:color="#8A682C"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Green Emerald Gemstones along Collar -->
+    <path android:pathData="M60,86 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#097969"/>
+    <path android:pathData="M80,96 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#097969"/>
+    <path android:pathData="M100,102 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" android:fillColor="#C41E3A"/>
+    <path android:pathData="M120,96 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#097969"/>
+    <path android:pathData="M140,86 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#097969"/>
+
+    <!-- Bottom Hanging Pearls -->
+    <path android:pathData="M100,122 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#F8F8FF"/>
+    <path android:pathData="M85,116 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" android:fillColor="#F8F8FF"/>
+    <path android:pathData="M115,116 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" android:fillColor="#F8F8FF"/>
+</vector>

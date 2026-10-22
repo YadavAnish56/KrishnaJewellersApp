@@ -1,0 +1,67 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:pathData="M100,100 m-95,0 a95,95 0 1,0 190,0 a95,95 0 1,0 -190,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="95"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#FFFBF2"/>
+                <item android:offset="0.7" android:color="#F7EED9"/>
+                <item android:offset="1.0" android:color="#EEDEB8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Bullion Gold Bar Ingot Outline with Bevel -->
+    <path
+        android:pathData="M55,45 L145,45 L135,155 L65,155 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="55"
+                android:startY="45"
+                android:endX="145"
+                android:endY="155"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#8A682C"/>
+                <item android:offset="0.3" android:color="#D4AF37"/>
+                <item android:offset="0.6" android:color="#FFF9EE"/>
+                <item android:offset="1.0" android:color="#8A682C"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Inner Ingot Face -->
+    <path
+        android:pathData="M65,55 L135,55 L127,145 L73,145 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="65"
+                android:startY="55"
+                android:endX="135"
+                android:endY="145"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#D4AF37"/>
+                <item android:offset="0.5" android:color="#F8E8C0"/>
+                <item android:offset="1.0" android:color="#B89448"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- KJ Stamp -->
+    <path android:pathData="M95,68 L105,68 L105,74 L95,74 Z" android:fillColor="#8A682C"/>
+    <!-- "KRISHNA" Stamp Lines -->
+    <path android:pathData="M80,82 L120,82 L120,86 L80,86 Z" android:fillColor="#8A682C"/>
+    <!-- "999.9 FINE GOLD" -->
+    <path android:pathData="M84,94 L116,94 L116,97 L84,97 Z" android:fillColor="#8A682C"/>
+    <path android:pathData="M88,104 L112,104 L112,107 L88,107 Z" android:fillColor="#8A682C"/>
+    <!-- Serial Number -->
+    <path android:pathData="M85,120 L115,120 L115,123 L85,123 Z" android:fillColor="#8A682C"/>
+</vector>

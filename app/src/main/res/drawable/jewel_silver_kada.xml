@@ -1,0 +1,47 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:pathData="M100,100 m-95,0 a95,95 0 1,0 190,0 a95,95 0 1,0 -190,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="95"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#F8FAFC"/>
+                <item android:offset="0.7" android:color="#ECEFF2"/>
+                <item android:offset="1.0" android:color="#DEE3E8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Thick Sterling Silver Kada Band -->
+    <path
+        android:strokeWidth="24"
+        android:pathData="M100,105 m-50,0 a50,50 0 1,0 100,0 a50,50 0 1,0 -100,0">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="35"
+                android:startY="40"
+                android:endX="165"
+                android:endY="170"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#5D646B"/>
+                <item android:offset="0.4" android:color="#FFFFFF"/>
+                <item android:offset="0.7" android:color="#A0AAB3"/>
+                <item android:offset="1.0" android:color="#5D646B"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Mirror Lustre Line Along Midsection -->
+    <path
+        android:strokeWidth="2"
+        android:pathData="M100,105 m-50,0 a50,50 0 1,0 100,0 a50,50 0 1,0 -100,0"
+        android:strokeColor="#FFFFFF"/>
+</vector>

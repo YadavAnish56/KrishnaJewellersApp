@@ -1,0 +1,119 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Background Luxury Gradient Circle -->
+    <path
+        android:pathData="M100,100 m-95,0 a95,95 0 1,0 190,0 a95,95 0 1,0 -190,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="95"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#FFFBF2"/>
+                <item android:offset="0.7" android:color="#F7EED9"/>
+                <item android:offset="1.0" android:color="#EEDEB8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Outer Collar Arc -->
+    <path
+        android:strokeWidth="6"
+        android:pathData="M35,65 Q100,135 165,65">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="35"
+                android:startY="65"
+                android:endX="165"
+                android:endY="135"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#8A682C"/>
+                <item android:offset="0.5" android:color="#D4AF37"/>
+                <item android:offset="1.0" android:color="#B89448"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Inner Filigree Arc -->
+    <path
+        android:strokeWidth="4"
+        android:pathData="M45,60 Q100,118 155,60">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="45"
+                android:startY="60"
+                android:endX="155"
+                android:endY="118"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#D4AF37"/>
+                <item android:offset="1.0" android:color="#8A682C"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Center Royal Pendant Medallion -->
+    <path
+        android:pathData="M100,105 L118,125 L100,150 L82,125 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="82"
+                android:startY="105"
+                android:endX="118"
+                android:endY="150"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#D4AF37"/>
+                <item android:offset="0.5" android:color="#F3E5AB"/>
+                <item android:offset="1.0" android:color="#8A682C"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Center Ruby Gemstone -->
+    <path
+        android:pathData="M100,118 L108,128 L100,138 L92,128 Z"
+        android:fillColor="#C41E3A"/>
+
+    <!-- Left Flanking Drops -->
+    <path
+        android:pathData="M65,92 L75,106 L65,120 L55,106 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="55"
+                android:startY="92"
+                android:endX="75"
+                android:endY="120"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#D4AF37"/>
+                <item android:offset="1.0" android:color="#8A682C"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Right Flanking Drops -->
+    <path
+        android:pathData="M135,92 L145,106 L135,120 L125,106 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="125"
+                android:startY="92"
+                android:endX="145"
+                android:endY="120"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#D4AF37"/>
+                <item android:offset="1.0" android:color="#8A682C"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Hanging Pearl Drops Along Base -->
+    <path android:pathData="M100,158 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#F8F8FF"/>
+    <path android:pathData="M85,145 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" android:fillColor="#F8F8FF"/>
+    <path android:pathData="M115,145 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" android:fillColor="#F8F8FF"/>
+    <path android:pathData="M65,126 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" android:fillColor="#F8F8FF"/>
+    <path android:pathData="M135,126 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" android:fillColor="#F8F8FF"/>
+</vector>

@@ -1,0 +1,80 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:pathData="M100,100 m-95,0 a95,95 0 1,0 190,0 a95,95 0 1,0 -190,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="95"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#FFFBF2"/>
+                <item android:offset="0.7" android:color="#F7EED9"/>
+                <item android:offset="1.0" android:color="#EEDEB8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Ear Stud Medallion -->
+    <path
+        android:pathData="M100,50 m-16,0 a16,16 0 1,0 32,0 a16,16 0 1,0 -32,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="84"
+                android:startY="34"
+                android:endX="116"
+                android:endY="66"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#8A682C"/>
+                <item android:offset="0.5" android:color="#D4AF37"/>
+                <item android:offset="1.0" android:color="#B89448"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Ruby Gem in Center Stud -->
+    <path android:pathData="M100,50 m-7,0 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0" android:fillColor="#C41E3A"/>
+
+    <!-- Connecting Joint -->
+    <path android:pathData="M98,66 L102,66 L102,78 L98,78 Z" android:fillColor="#8A682C"/>
+
+    <!-- Bell/Dome of Jhumka -->
+    <path
+        android:pathData="M60,118 C60,82 140,82 140,118 L60,118 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="60"
+                android:startY="82"
+                android:endX="140"
+                android:endY="118"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#8A682C"/>
+                <item android:offset="0.3" android:color="#F3E5AB"/>
+                <item android:offset="0.7" android:color="#D4AF37"/>
+                <item android:offset="1.0" android:color="#8A682C"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Dome Rim Filigree -->
+    <path android:pathData="M56,118 L144,118 L144,124 L56,124 Z" android:fillColor="#D4AF37"/>
+
+    <!-- Dangling Gold Ghungroo Beads -->
+    <path android:pathData="M64,134 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#D4AF37"/>
+    <path android:pathData="M78,136 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#D4AF37"/>
+    <path android:pathData="M92,138 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#D4AF37"/>
+    <path android:pathData="M100,140 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" android:fillColor="#D4AF37"/>
+    <path android:pathData="M108,138 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#D4AF37"/>
+    <path android:pathData="M122,136 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#D4AF37"/>
+    <path android:pathData="M136,134 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#D4AF37"/>
+
+    <!-- Droplet Strings -->
+    <path android:pathData="M64,124 L64,130 M78,124 L78,132 M92,124 L92,134 M100,124 L100,135 M108,124 L108,134 M122,124 L122,132 M136,124 L136,130"
+        android:strokeWidth="1.5"
+        android:strokeColor="#8A682C"/>
+</vector>

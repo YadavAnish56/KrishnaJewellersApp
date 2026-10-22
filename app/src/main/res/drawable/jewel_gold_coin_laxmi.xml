@@ -1,0 +1,66 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:pathData="M100,100 m-95,0 a95,95 0 1,0 190,0 a95,95 0 1,0 -190,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="95"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#FFFBF2"/>
+                <item android:offset="0.7" android:color="#F7EED9"/>
+                <item android:offset="1.0" android:color="#EEDEB8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Outer Coin Rim -->
+    <path
+        android:strokeWidth="4"
+        android:pathData="M100,100 m-56,0 a56,56 0 1,0 112,0 a56,56 0 1,0 -112,0"
+        android:strokeColor="#8A682C"/>
+
+    <!-- Coin Disc -->
+    <path
+        android:pathData="M100,100 m-52,0 a52,52 0 1,0 104,0 a52,52 0 1,0 -104,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="48"
+                android:startY="48"
+                android:endX="152"
+                android:endY="152"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#D4AF37"/>
+                <item android:offset="0.3" android:color="#FFF3D4"/>
+                <item android:offset="0.7" android:color="#B89448"/>
+                <item android:offset="1.0" android:color="#8A682C"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Beaded Border Inside Coin -->
+    <path
+        android:strokeWidth="1.2"
+        android:pathData="M100,100 m-46,0 a46,46 0 1,0 92,0 a46,46 0 1,0 -92,0"
+        android:strokeColor="#8A682C"/>
+
+    <!-- Goddess Laxmi Lotus Throne & Silhouette -->
+    <!-- Lotus Petals -->
+    <path
+        android:pathData="M78,124 Q100,140 122,124 Q100,132 78,124 Z"
+        android:fillColor="#8A682C"/>
+    <!-- Diya/Aura -->
+    <path android:pathData="M100,75 m-12,0 a12,12 0 1,0 24,0 a12,12 0 1,0 -24,0" android:fillColor="#D4AF37"/>
+    <!-- Mukut -->
+    <path android:pathData="M94,65 L100,55 L106,65 Z" android:fillColor="#8A682C"/>
+    <!-- Seated Grace -->
+    <path android:pathData="M86,85 Q100,75 114,85 L120,118 L80,118 Z" android:fillColor="#8A682C"/>
+    <!-- 999 Hallmark Stamp -->
+    <path android:pathData="M88,142 L112,142 L112,146 L88,146 Z" android:fillColor="#8A682C"/>
+</vector>

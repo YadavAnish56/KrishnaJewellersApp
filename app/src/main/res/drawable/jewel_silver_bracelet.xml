@@ -1,0 +1,49 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:pathData="M100,100 m-95,0 a95,95 0 1,0 190,0 a95,95 0 1,0 -190,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="95"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#F8FAFC"/>
+                <item android:offset="0.7" android:color="#ECEFF2"/>
+                <item android:offset="1.0" android:color="#DEE3E8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Silver Tennis Bracelet Arc -->
+    <path
+        android:strokeWidth="10"
+        android:pathData="M45,70 Q100,140 155,70">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="45"
+                android:startY="70"
+                android:endX="155"
+                android:endY="140"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#717D8A"/>
+                <item android:offset="0.5" android:color="#ECEFF2"/>
+                <item android:offset="1.0" android:color="#717D8A"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Sparkling CZ Stones Set in Line -->
+    <path android:pathData="M52,76 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" android:fillColor="#FFFFFF"/>
+    <path android:pathData="M65,90 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" android:fillColor="#E6F2FF"/>
+    <path android:pathData="M80,102 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" android:fillColor="#FFFFFF"/>
+    <path android:pathData="M100,108 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" android:fillColor="#FFFFFF"/>
+    <path android:pathData="M120,102 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" android:fillColor="#FFFFFF"/>
+    <path android:pathData="M135,90 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" android:fillColor="#E6F2FF"/>
+    <path android:pathData="M148,76 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" android:fillColor="#FFFFFF"/>
+</vector>

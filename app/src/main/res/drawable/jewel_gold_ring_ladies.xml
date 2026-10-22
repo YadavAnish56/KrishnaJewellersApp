@@ -1,0 +1,70 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:pathData="M100,100 m-95,0 a95,95 0 1,0 190,0 a95,95 0 1,0 -190,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="95"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#FFFBF2"/>
+                <item android:offset="0.7" android:color="#F7EED9"/>
+                <item android:offset="1.0" android:color="#EEDEB8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Ring Band Outer Silhouette -->
+    <path
+        android:strokeWidth="14"
+        android:pathData="M100,115 m-46,0 a46,46 0 1,0 92,0 a46,46 0 1,0 -92,0">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="50"
+                android:startY="65"
+                android:endX="150"
+                android:endY="165"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#8A682C"/>
+                <item android:offset="0.3" android:color="#F3E5AB"/>
+                <item android:offset="0.7" android:color="#D4AF37"/>
+                <item android:offset="1.0" android:color="#8A682C"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Diamond Crown Setting Shoulders -->
+    <path
+        android:pathData="M80,72 L100,56 L120,72 L112,76 L100,66 L88,76 Z"
+        android:fillColor="#D4AF37"/>
+
+    <!-- 4 Diamond Prongs -->
+    <path android:pathData="M88,58 L92,42 L96,44 L92,58 Z" android:fillColor="#FFFFFF"/>
+    <path android:pathData="M112,58 L108,42 L104,44 L108,58 Z" android:fillColor="#FFFFFF"/>
+
+    <!-- Sparkling Solitaire Diamond Facets -->
+    <path
+        android:pathData="M90,44 L110,44 L120,54 L100,74 L80,54 Z"
+        android:fillColor="#E6F2FF"/>
+    <path
+        android:pathData="M94,44 L106,44 L100,54 Z"
+        android:fillColor="#FFFFFF"/>
+    <path
+        android:pathData="M80,54 L94,44 L100,54 Z"
+        android:fillColor="#B8D8F8"/>
+    <path
+        android:pathData="M120,54 L106,44 L100,54 Z"
+        android:fillColor="#CFE4FC"/>
+    <path
+        android:pathData="M80,54 L100,54 L100,74 Z"
+        android:fillColor="#FFFFFF"/>
+    <path
+        android:pathData="M120,54 L100,54 L100,74 Z"
+        android:fillColor="#B8D8F8"/>
+</vector>

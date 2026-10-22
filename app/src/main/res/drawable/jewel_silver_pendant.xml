@@ -1,0 +1,51 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:pathData="M100,100 m-95,0 a95,95 0 1,0 190,0 a95,95 0 1,0 -190,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="95"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#F8FAFC"/>
+                <item android:offset="0.7" android:color="#ECEFF2"/>
+                <item android:offset="1.0" android:color="#DEE3E8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Top Loop Bail -->
+    <path
+        android:strokeWidth="5"
+        android:pathData="M100,45 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0"
+        android:strokeColor="#717D8A"/>
+
+    <!-- Pear Teardrop Silver Pendant Body -->
+    <path
+        android:pathData="M100,60 C75,100 65,130 100,155 C135,130 125,100 100,60 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="65"
+                android:startY="60"
+                android:endX="135"
+                android:endY="155"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#717D8A"/>
+                <item android:offset="0.4" android:color="#FFFFFF"/>
+                <item android:offset="0.8" android:color="#A0AAB3"/>
+                <item android:offset="1.0" android:color="#5D646B"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Center Aquamarine / Blue Topaz Gem -->
+    <path
+        android:pathData="M100,85 C88,110 82,125 100,140 C118,125 112,110 100,85 Z"
+        android:fillColor="#70D6FF"/>
+</vector>

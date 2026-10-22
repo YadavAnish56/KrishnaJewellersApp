@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#181512</color>
+    <color name="primary_bg">#FFFCF7</color>
+    <color name="secondary_bg">#F7F1E7</color>
+    <color name="premium_gold">#B89448</color>
+    <color name="deep_gold">#8A682C</color>
+    <color name="dark_text">#24201B</color>
+    <color name="muted_text">#81796F</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="accent">#EEE1C7</color>
+    <color name="gold_border">#DFC89B</color>
+</resources>

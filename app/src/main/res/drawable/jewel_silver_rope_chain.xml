@@ -1,0 +1,52 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:pathData="M100,100 m-95,0 a95,95 0 1,0 190,0 a95,95 0 1,0 -190,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="95"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#F8FAFC"/>
+                <item android:offset="0.7" android:color="#ECEFF2"/>
+                <item android:offset="1.0" android:color="#DEE3E8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Italian Silver Box Link Chain Outer Curve -->
+    <path
+        android:strokeWidth="11"
+        android:pathData="M42,55 C42,162 158,162 158,55">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="42"
+                android:startY="55"
+                android:endX="158"
+                android:endY="162"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#717D8A"/>
+                <item android:offset="0.3" android:color="#FFFFFF"/>
+                <item android:offset="0.7" android:color="#9EA8B3"/>
+                <item android:offset="1.0" android:color="#717D8A"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Inner Highlight -->
+    <path
+        android:strokeWidth="4"
+        android:pathData="M52,60 C52,145 148,145 148,60"
+        android:strokeColor="#FFFFFF"/>
+
+    <!-- Lobster Clasp -->
+    <path
+        android:pathData="M94,44 L106,44 L106,52 L94,52 Z"
+        android:fillColor="#717D8A"/>
+</vector>

@@ -1,0 +1,65 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:pathData="M100,100 m-95,0 a95,95 0 1,0 190,0 a95,95 0 1,0 -190,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="95"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#FFFBF2"/>
+                <item android:offset="0.7" android:color="#F7EED9"/>
+                <item android:offset="1.0" android:color="#EEDEB8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Outer Chain Loop -->
+    <path
+        android:strokeWidth="10"
+        android:pathData="M40,55 C40,165 160,165 160,55">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="40"
+                android:startY="55"
+                android:endX="160"
+                android:endY="165"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#8A682C"/>
+                <item android:offset="0.3" android:color="#F3E5AB"/>
+                <item android:offset="0.6" android:color="#D4AF37"/>
+                <item android:offset="1.0" android:color="#8A682C"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Inner Chain Loop for 2-Strand Rope Look -->
+    <path
+        android:strokeWidth="6"
+        android:pathData="M55,60 C55,145 145,145 145,60">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="55"
+                android:startY="60"
+                android:endX="145"
+                android:endY="145"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#D4AF37"/>
+                <item android:offset="0.5" android:color="#8A682C"/>
+                <item android:offset="1.0" android:color="#D4AF37"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Solid S-Lock Clasp at Top -->
+    <path
+        android:pathData="M92,48 C92,42 98,38 102,42 C106,46 94,48 98,54 C102,58 108,54 108,48"
+        android:strokeWidth="4"
+        android:strokeColor="#8A682C"/>
+</vector>

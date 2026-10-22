@@ -1,0 +1,72 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:pathData="M100,100 m-95,0 a95,95 0 1,0 190,0 a95,95 0 1,0 -190,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="95"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#FFFBF2"/>
+                <item android:offset="0.7" android:color="#F7EED9"/>
+                <item android:offset="1.0" android:color="#EEDEB8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Black Beads Chain Strands -->
+    <path
+        android:strokeWidth="5"
+        android:pathData="M45,50 Q100,140 155,50"
+        android:strokeColor="#1C1B1A"/>
+
+    <!-- Gold Accent Dots along Chain -->
+    <path android:pathData="M52,65 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" android:fillColor="#D4AF37"/>
+    <path android:pathData="M65,85 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" android:fillColor="#D4AF37"/>
+    <path android:pathData="M148,65 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" android:fillColor="#D4AF37"/>
+    <path android:pathData="M135,85 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" android:fillColor="#D4AF37"/>
+
+    <!-- Traditional Twin Wati (Cups) -->
+    <!-- Left Wati Cup -->
+    <path
+        android:pathData="M80,120 C80,135 96,135 96,120 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="80"
+                android:startY="120"
+                android:endX="96"
+                android:endY="135"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#D4AF37"/>
+                <item android:offset="1.0" android:color="#8A682C"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Right Wati Cup -->
+    <path
+        android:pathData="M104,120 C104,135 120,135 120,120 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="104"
+                android:startY="120"
+                android:endX="120"
+                android:endY="135"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#D4AF37"/>
+                <item android:offset="1.0" android:color="#8A682C"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Center Connecting Gold Ring & Coral/Ghungroo -->
+    <path android:pathData="M100,122 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -3,0" android:fillColor="#C41E3A"/>
+    <path android:pathData="M88,138 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" android:fillColor="#D4AF37"/>
+    <path android:pathData="M112,138 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" android:fillColor="#D4AF37"/>
+</vector>
