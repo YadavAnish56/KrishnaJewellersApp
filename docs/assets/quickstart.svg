@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="180" viewBox="0 0 1200 180" role="img"><title>Clone, open, run</title><rect width="1200" height="180" rx="12" fill="#111318"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+<g fill="#d5b878" font-size="42"><text x="44" y="81">01</text><text x="440" y="81">02</text><text x="836" y="81">03</text></g>
+<g fill="#f6efe2" font-size="25"><text x="122" y="70">Clone</text><text x="518" y="70">Open</text><text x="914" y="70">Run</text></g>
+<g fill="#ada99f" font-size="17"><text x="122" y="107">Get the source from GitHub</text><text x="518" y="107">Sync in Android Studio</text><text x="914" y="107">API 24+ device or emulator</text></g>
+<path d="M400 42v94M796 42v94" stroke="#51452e"/>
+<text x="44" y="156" fill="#ada99f" font-size="14">No backend setup required for the local demo.</text></g></svg>

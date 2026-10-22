@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img"><title>From screen to local storage</title>
+<rect width="1200" height="280" rx="12" fill="#111318"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+<text x="48" y="48" fill="#d5b878" font-size="16" letter-spacing="3">INSIDE THE APP</text>
+<g fill="none" stroke="#6f5e3d" stroke-width="2">
+<path d="M260 150H340 M540 150H620 M820 150H900"/>
+<path d="m330 144 10 6-10 6m280-12 10 6-10 6m280-12 10 6-10 6"/>
+</g>
+<g fill="#1b1d21" stroke="#51452e">
+<rect x="48" y="90" width="212" height="120" rx="8"/>
+<rect x="340" y="90" width="200" height="120" rx="8"/>
+<rect x="620" y="90" width="200" height="120" rx="8"/>
+<rect x="900" y="90" width="252" height="120" rx="8"/>
+</g>
+<g fill="#f6efe2" font-size="24" text-anchor="middle">
+<text x="154" y="137">Compose UI</text><text x="440" y="137">ViewModels</text>
+<text x="720" y="137">Repository</text><text x="1026" y="137">Local storage</text></g>
+<g fill="#ada99f" font-size="17" text-anchor="middle">
+<text x="154" y="174">Screens &amp; navigation</text><text x="440" y="174">State &amp; actions</text>
+<text x="720" y="174">Data operations</text><text x="1026" y="174">SQLite + DataStore</text></g>
+<text x="48" y="253" fill="#ada99f" font-size="15">Observable state returns to the UI through Kotlin flows. Core demo data stays on the device.</text>
+</g></svg>

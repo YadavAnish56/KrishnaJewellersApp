@@ -1,6 +1,47 @@
+<div align="center">
+
+<img src="app/src/main/res/drawable/app_logo.png" width="112" height="112" alt="Krishna Jewellers gold KJ crown logo" />
+
 # Krishna Jewellers
 
-A native Android jewellery showroom app built with Kotlin and Jetpack Compose. Browse gold and silver collections, explore estimated prices, save favourite designs, and try customer enquiries and showroom management in a local demo.
+**A jewellery showroom, thoughtfully brought to Android.**
+
+Discover collections. Explore the details. Find your next design.
+
+<p>
+  <img src="docs/assets/badge-version.svg" alt="App version 1.0.2" />
+  <img src="docs/assets/badge-android.svg" alt="Android 7.0 and above" />
+  <img src="docs/assets/badge-compose.svg" alt="Jetpack Compose interface" />
+  <img src="docs/assets/badge-local.svg" alt="Local device storage" />
+</p>
+
+[Explore features](#features) &nbsp; · &nbsp; [Run the app](#get-started) &nbsp; · &nbsp; [Start contributing](#collaborating-with-a-friend)
+
+<img src="docs/assets/showroom.gif" width="1200" alt="Animated gold-on-charcoal banner: Krishna Jewellers, with a rotating jewel accent and transitions between collection discovery, price details, and enquiries" />
+
+<sub>[View the still banner](docs/assets/showroom-static.png) · Original README graphics included in this repository</sub>
+
+</div>
+
+---
+
+A native Android jewellery showroom app built with **Kotlin and Jetpack Compose**. Browse gold and silver collections, explore estimated prices, save favourite designs, and try customer enquiries and showroom management in a local demo.
+
+## The collection
+
+<table>
+  <tr>
+    <td align="center" width="33%"><img src="app/src/main/res/drawable/real_bridal_choker.jpg" width="260" alt="Bridal choker product artwork bundled with the app" /><br /><strong>Bridal collections</strong><br /><sub>Statement designs for special occasions</sub></td>
+    <td align="center" width="33%"><img src="app/src/main/res/drawable/real_gold_bangles.jpg" width="260" alt="Gold bangles product artwork bundled with the app" /><br /><strong>Gold essentials</strong><br /><sub>Explore designs, weights, and purity</sub></td>
+    <td align="center" width="33%"><img src="app/src/main/res/drawable/real_silver_payal.jpg" width="260" alt="Silver payal product artwork bundled with the app" /><br /><strong>Silver details</strong><br /><sub>Discover pieces worth saving</sub></td>
+  </tr>
+</table>
+
+<sub>Product artwork from the app's bundled catalogue; these are not application screenshots.</sub>
+
+<details>
+<summary><strong>Project at a glance</strong></summary>
+
 
 | Project | Details |
 | --- | --- |
@@ -11,16 +52,27 @@ A native Android jewellery showroom app built with Kotlin and Jetpack Compose. B
 | Interface | Jetpack Compose and Material 3 |
 | Storage | SQLite and Preferences DataStore |
 
+</details>
+
 ## Features
 
-- **Showroom home:** featured collections, product imagery, categories, and metal rates.
-- **Explore and product details:** browse jewellery and inspect weight, purity, making charges, and estimated prices.
-- **Price breakdown:** metal value, percentage/per-gram/fixed making charges, and a configured 3% GST estimate using `BigDecimal` calculations.
-- **Saved designs:** keep favourites and liked products on the device.
-- **Enquiries:** local conversation screens with product and price attachments.
-- **Custom designs:** submit and manage design requests in the demo.
-- **Staff portal:** manage products, visibility, metal rates, enquiries, and custom requests.
-- **Onboarding and profiles:** sample customer login and guest browsing.
+| Discover | Make it personal | Manage the showroom |
+| --- | --- | --- |
+| Featured collections and category browsing | Saved favourites and liked products | Product and visibility management |
+| Product imagery, purity, and weight details | Enquiries with product and price attachments | Manual gold and silver rate updates |
+| Itemised price and making-charge estimates | Custom design requests | Enquiry and custom-request management |
+| Gold and silver catalogue | Sample customer login and guest browsing | Local staff demo portal |
+
+### Every estimate, explained
+
+```text
+Metal value     = weight in grams × rate per gram
+Making charge   = percentage, per gram, or fixed amount
+Subtotal        = metal value + making charge
+Estimated total = subtotal + configured GST (3%)
+```
+
+`BigDecimal` calculations keep monetary rounding explicit. Gold rates are stored per 10 grams and silver rates per kilogram, then converted to per-gram values for the estimate. The configured demo tax is part of the app calculation, not tax guidance.
 
 ## What runs locally
 
@@ -29,6 +81,8 @@ This repository is an **offline demo**. SQLite holds the catalogue, rates, favou
 Customer login and the staff passcode are demo UI flows, not production authentication. Enquiries and staff updates stay on the same installation: they are not delivered to another phone or a live showroom. Rates are sample/manual values, not a live market feed. Prices are estimates rather than checkout or invoicing.
 
 ## Get started
+
+<img src="docs/assets/quickstart.svg" width="1200" alt="Three setup steps: clone the repository, open and sync in Android Studio, then run on an API 24 or newer device or emulator" />
 
 ### 1. Clone the repository
 
@@ -84,6 +138,11 @@ Data normally persists across app restarts. Clearing app storage or uninstalling
 
 ## Project structure
 
+<img src="docs/assets/architecture.svg" width="1200" alt="App architecture: Compose screens call ViewModels, which use the repository to access SQLite and DataStore; Kotlin flows return observable state to the UI" />
+
+<details>
+<summary><strong>Open the source map</strong></summary>
+
 ```text
 app/
   build.gradle.kts           App configuration, dependencies, optional signing
@@ -110,6 +169,8 @@ gradle/wrapper/             Checked-in Gradle wrapper
 
 To change sample products, start with `data/local/SeedData.kt`. To change calculations, inspect `data/model/PriceBreakdown.kt`, `MetalRates.kt`, and `Product.kt`. To change screens, edit `ui/screens/`; shared visual styles are in `ui/theme/` and `ui/components/`.
 
+</details>
+
 ## Collaborating with a friend
 
 The repository is public, so your friend can clone it immediately. To let them push branches directly, the repository owner must invite their GitHub account under **Settings > Collaborators**. Otherwise they can fork the repository and submit a pull request.
@@ -130,6 +191,9 @@ Open a pull request into `main` on GitHub. After it is merged, both developers c
 
 ## Signing and private files
 
+<details>
+<summary><strong>Debug builds, release signing, and installed-app compatibility</strong></summary>
+
 A fresh clone builds debug APKs using the standard local Android debug signing key. The original private signing key, signing passwords, SDK paths, APKs, caches, and build directories are excluded from Git.
 
 For an authorised signed build:
@@ -143,6 +207,8 @@ When `keystore.properties` exists, both debug and release builds use that config
 
 An APK signed with another developer's debug key cannot update an existing installation signed by the original key. Use the original signing configuration privately to preserve update compatibility. Uninstalling the old app allows installation with a different key but removes local app data.
 
+</details>
+
 ## Verification and troubleshooting
 
 - Run `testDebugUnitTest` for the existing four tests covering gold/silver rate conversion and percentage, per-gram, and fixed making-charge calculations.
@@ -155,3 +221,22 @@ An APK signed with another developer's debug key cannot update an existing insta
 ## Before production use
 
 Production deployment needs server-backed authentication and authorisation, shared storage and message delivery, verified rate sources, non-destructive database migrations, and an appropriate privacy/data policy. Review the rights to bundled product imagery before redistribution. No open-source licence has been assigned in this repository; agree on reuse and distribution terms with the owner.
+
+<details>
+<summary><strong>About the README artwork</strong></summary>
+
+The banner includes gentle text transitions and moving geometric accents in a self-contained GIF. The logo and collection images are existing app assets. The badges, setup graphic, and architecture graphic are stored locally, so they do not depend on external badge or animation services.
+
+To change the original documentation graphics, edit [`tools/generate_readme_assets.py`](tools/generate_readme_assets.py), install Pillow with `python -m pip install Pillow`, and run `python tools/generate_readme_assets.py`. The generator uses Georgia/Segoe UI fonts on Windows, with DejaVu fallbacks on other systems. Python is only needed to regenerate these graphics; it is not required to build the Android app.
+
+</details>
+
+---
+
+<div align="center">
+
+<strong>Krishna Jewellers</strong><br />
+<sub>Discover. Save. Enquire.</sub><br /><br />
+[Back to top](#krishna-jewellers)
+
+</div>
